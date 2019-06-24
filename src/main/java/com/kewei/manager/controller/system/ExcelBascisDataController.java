@@ -104,7 +104,6 @@ public class ExcelBascisDataController {
         if(lists.size() > 0){
             list2.add(lists.get(lists.size()-1));
             map.put("list2",list2);
-            System.out.println(map);
             return map;
         }
             return null;
