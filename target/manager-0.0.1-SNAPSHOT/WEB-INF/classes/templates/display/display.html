@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:include="layout :: htmlhead" th:with="title='数据展示'"></head>
+<link rel="stylesheet" type="text/css" href="/css/formSelects-v4.css"/>
+<link rel="stylesheet" type="text/css" href="/css/statistics.css"/>
+<body class="layui-layout-body">
+<div class="layui-layout layui-layout-admin">
+    <!--头-->
+    <div th:replace="fragments/head :: header"></div>
+    <div class="layui-body" style="margin: 1%">
+
+        <form id="displaySearch" class="layui-form layui-form-pane" method="post" action="" style="margin-top: 20px;">
+            <div class="layui-form-item">
+                <div class="layui-inline">
+                    <label class="layui-form-label">开始时间</label>
+                    <div class="layui-input-inline" style="width: 175px;">
+                        <input  name="startTime" id="startTime" placeholder="yyyy-MM-dd" autocomplete="off" class="layui-input" type="data"/>
+                    </div>
+                    <label class="layui-form-label">结束时间</label>
+                    <div class="layui-form-mid">-</div>
+                        <div class="layui-input-inline" style="width: 175px;">
+                            <input name="endTime" id="endTime" placeholder="yyyy-MM-dd" autocomplete="off" class="layui-input" type="data"/>
+                        </div>
+                    <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                    <button class="layui-btn"  lay-submit="" lay-filter="searchSubmit" onclick="getData()">查询</button>
+                </div>
+            </div>
+        </form>
+        <hr class="layui-bg-black"/>
+
+            <table class="altrowstable" id="alternatecolor">
+                <div class="equipment">
+                    <select>
+                        <option>一号设备</option>
+                        <option>二号设备</option>
+                        <option>三号设备</option>
+                    </select>
+                </div>
+                <div class="excel">
+                    <button class="excel_bu">导出Excel</button>
+                </div>
+                <tr>
+                    <td>等级</td>
+                    <td>划分</td>
+                    <td>个数</td>
+                    <td>最大值</td>
+                    <td>操作</td>
+                </tr>
+                 <tr>
+                     <td>一级</td>
+                     <td>0 - 1</td>
+                     <td><p th:text="${key1}+'个'"/></td>
+                     <td id="level1"></td>
+                     <td>
+                         <div class="layui-input-inline">
+                         <button type="button" onclick="selectstatistics1()" class="layui-btn layui-btn-primary layui-btn-radius">详情</button>
+                         </div>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td>二级</td>
+                     <td>1 - 2</td>
+                     <td><p th:text="${key2}+'个'"/></td>
+                     <td id="level2"></td>
+                     <td>
+                     <div class="layui-input-inline">
+                         <button type="button" onclick="selectstatistics2()" class="layui-btn layui-btn-primary layui-btn-radius">详情</button>
+                     </div>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td>三级</td>
+                     <td>2 - 3</td>
+                     <td><p th:text="${key3}+'个'"/></td>
+                     <td id="level3"></td>
+                     <td>
+                     <div class="layui-input-inline">
+                         <button type="button" onclick="selectstatistics3()" class="layui-btn layui-btn-primary layui-btn-radius">详情</button>
+                     </div>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td>四级</td>
+                     <td>3 - 4</td>
+                     <td><p th:text="${key4}+'个'"/></td>
+                     <td id="level4"></td>
+                     <td>
+                     <div class="layui-input-inline">
+                         <button type="button" onclick="selectstatistics4()" class="layui-btn layui-btn-primary layui-btn-radius">详情</button>
+                     </div>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td>五级</td>
+                     <td>4以上</td>
+                     <td><p th:text="${key5}+'个'"/></td>
+                     <td id="level5"></td>
+                     <td>
+                     <div class="layui-input-inline">
+                         <button type="button" onclick="selectstatistics5()" class="layui-btn layui-btn-primary layui-btn-radius">详情</button>
+                     </div>
+                     </td>
+                 </tr>
+             </table>
+            <hr>
+            <div id="main" style="height: 400px;width: 950px"></div>
+        </div>
+
+    <!-- 详情界面1 -->
+    <div class="layui-row" id="particulars1" style="display:none;"></div>
+    <!-- 详情界面2-->
+    <div class="layui-row" id="particulars2" style="display:none;"></div>
+    <!-- 详情界面3 -->
+    <div class="layui-row" id="particulars3" style="display:none;"></div>
+    <!-- 详情界面4 -->
+    <div class="layui-row" id="particulars4" style="display:none;"></div>
+    <!-- 详情界面5 -->
+    <div class="layui-row" id="particulars5" style="display:none;"></div>
+    <!--底部-->
+    <div th:replace="fragments/footer :: footer"></div>
+    <script src="/js/jquery/jquery-3.3.1.min.js"></script>
+    <script src="/js/echarts/echarts.min.js"></script>
+    <script src="/js/dateUtils.js"></script>
+    <script src="/js/display/displays.js"></script>
+    <script src="/js/statistics/statistics.js" ></script>
+</div>
+</body>
+</html>

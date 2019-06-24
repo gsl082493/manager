@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<head th:include="layout :: htmlhead" th:with="title='设备展示'"></head>
+<link rel="stylesheet" type="text/css" href="/css/formSelects-v4.css"/>
+<link rel="stylesheet" type="text/css" href="/css/statistics.css"/>
+<body class="layui-layout-body">
+<div class="layui-layout layui-layout-admin">
+    <!--头-->
+    <div th:replace="fragments/head :: header"></div>
+    <div class="layui-body" style="margin: 1%">
+
+             <div class="layui-col-xs12 layui-col-sm4" style="height: 330px;width: 30%;border-top: 1px solid;border-bottom: 1px solid; border-left: 1px solid ">
+                <div class="demoTable layui-col-sm3.5">
+                <div class="layui-form-item">
+  			 			<label class="layui-form-label" style="width:190px; line-height:15px;">设备信息</label>
+  			 			<hr>
+  			 		</div>
+ 				<div class="layui-form-item">
+        			<label class="layui-form-label" style="width:100px; line-height:15px;padding: 5px 30px;">设备名称:</label>
+      				<div class="layui-input-inline" style="width: 80px;">
+      					 <input type="hidden" id="id">
+          				 <input type="text" id="name" class="layui-input" style="width: 100px; height:25px;border-color: black;"/>
+     			 	</div>
+       			</div>
+       			<div class="layui-form-item">
+       			<label class="layui-form-label" style="width:100px; line-height:15px;padding: 5px 30px;">设备型号:</label>
+      				<div class="layui-input-inline" style="width: 80px;">
+          				 <input type="text" id="xinghao" class="layui-input" style="width: 100px; height:25px;border-color: black;"/>
+     			 	</div>
+     			 </div>
+       			<div class="layui-form-item">
+       				<label class="layui-form-label" style="width:100px; line-height:15px;padding: 5px 30px;">出厂编号:</label>
+      				<div class="layui-input-inline" style="width: 80px;">
+          				 <input type="text" id="chuchang" class="layui-input" style="width: 100px; height:25px;border-color: black;"/>
+     			 	</div>
+       			</div>
+       			<div class="layui-form-item">
+       				<label class="layui-form-label" style="width:100px; line-height:14px;padding: 5px 30px;">标准编号:</label>
+      				<div class="layui-input-inline" style="width: 80px;">
+          				<input type="text" id="biaozhun" class="layui-input" style="width: 100px; height:25px;border-color: black;"/>
+     			 	</div>
+       			</div>
+       			<div class="layui-form-item">
+       				<label class="layui-form-label" style="width:100px; line-height:15px;padding: 5px 30px;">采样时间:</label>
+      				<div class="layui-input-inline" style="width: 150px;">
+          				<input type="text" id="caiTime" class="layui-input"  style="width: 150px; height:25px;border-color: black;"/>
+     			 	</div>
+       			</div>
+       			<div class="layui-form-item">
+       				<label class="layui-form-label" style="width:100px; line-height:15px;padding: 5px 30px;">被核参数:</label>
+      				<div class="layui-input-inline" style="width: 80px;">
+          				<input type="text" id="canshu" class="layui-input"  style="width: 100px; height:25px;border-color: black;"/>
+     			 	</div>
+       			</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label" style="width:100px; line-height:15px;padding: 5px 30px;">自定义设备编号:</label>
+						<div class="layui-input-inline" style="width: 80px;">
+							<input type="text" id="custom_Number" class="layui-input"  style="width: 100px; height:25px;border-color: black;"/>
+						</div>
+					</div>
+    		</div>
+              </div>
+              <div class="layui-col-xs12 layui-col-sm4" style="height: 330px;width: 35%;border: 1px solid;">
+                <div class="demoTable layui-col-sm3.5">
+  			 		<div class="layui-form-item">
+  			 			<label class="layui-form-label" style="width:190px; line-height:15px;">被测设备</label>
+  			 			<label class="layui-form-label" style="width:80px; line-height:15px;">标准器</label>
+  			 			<hr>
+  			 		</div>
+ 					<div class="layui-form-item">
+        			<label class="layui-form-label" style="width:100px; line-height:5px;">测量点1:</label>
+      				<div class="layui-input-inline" style="width: 100px">
+          				 <input type="text" id="wd1" class="layui-input" style="width: 100px; height:25px;border-color: black;text-align: left"/>
+     			 	</div>
+      				<div class="layui-input-inline" style="width: 100px;">
+          				 <input type="text" id="zml1" class="layui-input" style="width:100px; height:25px;border-color: black"/>
+     			 	</div>
+       				</div>
+       				<div class="layui-form-item">
+        			<label class="layui-form-label" style="width:100px; line-height:5px;">测量点2:</label>
+      				<div class="layui-input-inline" style="width: 100px;">
+          				 <input type="text" id="wd2" class="layui-input" style="width: 100px; height:25px;border-color: black;text-align: left;"/>
+     			 	</div>
+      				<div class="layui-input-inline" style="width: 100px;">
+          				 <input type="text" id="zml2" class="layui-input" style="width:100px; height:25px;border-color: black;"/>
+     			 	</div>
+       				</div>
+       				<div class="layui-form-item">
+        			<label class="layui-form-label" style="width:100px; line-height:5px;">测量点3:</label>
+      				<div class="layui-input-inline" style="width: 100px;">
+          				 <input type="text" id="wd3" class="layui-input" style="width: 100px; height:25px;border-color: black;text-align: left;"/>
+     			 	</div>
+      				<div class="layui-input-inline" style="width: 100px;">
+          				 <input type="text" id="zml3" class="layui-input" style="width:100px; height:25px;border-color: black;"/>
+     			 	</div>
+       				</div>
+       				<div class="layui-form-item">
+        			<label class="layui-form-label" style="width:100px; line-height:5px;">测量点4:</label>
+      				<div class="layui-input-inline" style="width: 100px;">
+          				 <input type="text" id="wd4" class="layui-input" style="width: 100px; height:25px;border-color: black;text-align: left;"/>
+     			 	</div>
+      				<div class="layui-input-inline" style="width: 100px;">
+          				 <input type="text" id="zml4" class="layui-input" style="width:100px; height:25px;border-color: black;"/>
+     			 	</div>
+       				</div>
+       				<div class="layui-form-item">
+        			<label class="layui-form-label" style="width:100px; line-height:5px;">测量点5:</label>
+      				<div class="layui-input-inline" style="width: 100px;">
+          				 <input type="text" id="wd5" class="layui-input" style="width: 100px; height:25px;border-color: black;text-align: left;"/>
+     			 	</div>
+      				<div class="layui-input-inline" style="width: 100px;">
+          				 <input type="text" id="zml5" class="layui-input" style="width:100px; height:25px;border-color: black;"/>
+     			 	</div>
+       				</div>
+       				<div class="layui-form-item">
+        			<label class="layui-form-label" style="width:100px; line-height:5px;">测量点6:</label>
+      				<div class="layui-input-inline" style="width: 100px;">
+          				 <input type="text" id="wd6" class="layui-input" style="width: 100px; height:25px;border-color: black;text-align: left;"/>
+     			 	</div>
+      				<div class="layui-input-inline" style="width: 100px;">
+          				 <input type="text" id="zml6" class="layui-input" style="width:100px; height:25px;border-color: black;"/>
+     			 	</div>
+       				</div>
+       				
+    		</div>
+              </div>
+             <div class="layui-col-xs12 layui-col-sm4" style="height: 330px;width: 350px;border-top: 1px solid;border-bottom: 1px solid; border-right: 1px solid">
+                <div class="demoTable layui-col-sm3.5">
+  			 		<div class="layui-form-item" style="height: 100px;width: 30%">
+  			 		</div>
+    			</div>
+    		<div class="demoTable layui-col-sm3.5">
+  			 		<div class="layui-form-item">
+  			 		<div class="layui-input-inline" style="width: 150px;height: 50px;">
+  			 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          				 <button type="button" class="layui-btn  layui-btn-normal layui-btn-radius" id="add" onclick="add()">添加设备</button>
+     			 	</div>
+     			 	<div class="layui-input-inline" style="width: 150px;height: 50px;">
+  			 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          				 <button type="button" class="layui-btn  layui-btn-radius" id="lianjie" onclick="lianjie()">连数据端</button>
+     			 	</div>
+     			 	<div class="layui-input-inline" style="width: 150px;height: 50px;">
+  			 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          				 <button type="button" class="layui-btn  layui-btn-warm layui-btn-radius" id="chaxun" onclick="cahxun()">数据查询</button>
+     			 	</div>
+     			 	<div class="layui-input-inline" style="width: 150px;height: 50px;">
+  			 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          				 <button type="button" class="layui-btn  layui-btn-danger layui-btn-radius" id="del" onclick="del()">数据删除</button>
+     			 	</div>
+  			 		</div>
+    		</div>
+              </div>
+            <hr>
+            <table class="layui-table-body" id="demo" lay-filter="demo"></table>
+        </div>
+
+    <!-- 添加功能 -->
+	<div id="add-user-form" class="layer_self_wrap" style="display:none;" >
+		<form class="layui-form layui-form-pane" method="post" action="" id="add-form" >
+			<div class="layui-form-item">
+				<div class="layui-inline">
+					<label class="layui-form-label">设备名称</label>
+					<div class="layui-input-inline">
+						<input type="text"  name="name" class="layui-input">
+
+					</div>
+				</div>
+				<div class="layui-inline">
+					<label class="layui-form-label">设备型号</label>
+					<div class="layui-input-inline">
+						<input type="text" name="model_Number" class="layui-input">
+
+					</div>
+				</div>
+			</div>
+
+			<div class="layui-form-item">
+				<div class="layui-inline">
+					<label class="layui-form-label">出厂编号</label>
+					<div class="layui-input-inline">
+						<input type="text" name="factory_Number" class="layui-input">
+
+					</div>
+				</div>
+				<div class="layui-inline">
+					<label class="layui-form-label">标准型号</label>
+					<div class="layui-input-inline">
+						<input type="text" name="standard_Number" class="layui-input">
+
+					</div>
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<div class="layui-inline">
+					<label class="layui-form-label">采样时间</label>
+					<div class="layui-input-inline">
+						<input type="text" class="layui-input" name="eq_time" id="eqtime" >
+					</div>
+				</div>
+				<div class="layui-inline">
+					<label class="layui-form-label">被核参数</label>
+					<div class="layui-input-inline">
+						<input type="text" name="canshu" class="layui-input">
+					</div>
+				</div>
+				<div class="layui-inline">
+					<label class="layui-form-label">自定义设备编号</label>
+					<div class="layui-input-inline">
+						<input type="text" name="custom_Number" class="layui-input">
+					</div>
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<div class="layui-input-block">
+					<button class="layui-btn layui-btn-radius" lay-submit = "" lay-filter="formbtn">立即提交</button>
+					<button type="reset" class="layui-btn layui-btn-radius layui-btn-warm">重置</button>
+				</div>
+			</div>
+		</form>
+	</div>
+	<!--底部-->
+	<script src="/js/jquery/jquery-3.3.1.min.js"></script>
+    <script src="/js/display/shebei.js"></script>
+</div>
+</body>
+</html>

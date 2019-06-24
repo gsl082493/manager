@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kewei.manager.dao.EquipmentMapper">
+    <select id="findEquipment" parameterType="map" resultType="map">
+	select 
+			  e.id,
+			  e.name,
+			  e.model_Number,
+			  e.factory_Number,
+			  e.standard_Number,
+			  e.eq_time,
+			  e.canshu,
+			  e.custom_Number
+			from
+			  equipment_information e
+			limit #{page},#{num}
+</select>
+
+<!-- 查询总数 -->
+	<select id="getCncount" resultType="int">
+		select count(*) from equipment_information
+	</select>
+	<insert id="add1" parameterType="map">
+		INSERT INTO equipment_information (name,model_Number,factory_Number,standard_Number,eq_time,canshu,custom_Number)
+		 VALUES (#{name},#{model_Number},#{factory_Number},#{standard_Number},#{eq_time},#{canshu},#{custom_Number})
+	</insert>
+	<delete id="del" parameterType="int">
+		delete from equipment_information where id=#{id}
+	</delete>
+    <!-- 查询设备名称 -->
+    <select id="selectName" parameterType="map" resultType="map">
+        SELECT DISTINCT(name)
+			FROM equipment_information
+    </select>
+	<!-- 查询设备型号 -->
+	<select id="selectModelNumber" parameterType="map" resultType="map">
+		SELECT DISTINCT(model_Number)
+			FROM equipment_information
+			WHERE name = #{name}
+	</select>
+	<select id="selectModelNameAndNumber" parameterType="map" resultType="map">
+		SELECT key4,key5,key6,key7,key8
+			FROM base_bascis_data INNER JOIN equipment_information
+			ON
+			base_bascis_data.e_id = equipment_information.id
+			WHERE name = #{name} AND model_Number = #{model_Number}
+	</select>
+</mapper>

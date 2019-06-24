@@ -1,0 +1,55 @@
+table.altrowstable {
+         font-family: verdana,arial,sans-serif;
+         font-size:11px;
+         color:#333333;
+         border-width: 1px;
+         border-color: #a9c6c9;
+         border-collapse: collapse;
+         width: 950px;
+         height: 196px;
+     }
+ table.altrowstable th {
+            border-width: 1px;
+            padding: 8px;
+            border-style: solid;
+            border-color: #a9c6c9;
+        }
+ table.altrowstable td {
+            border-width: 1px;
+            padding: 8px;
+            border-style: solid;
+            border-color: #a9c6c9;
+            text-align: center;
+        }
+  .oddrowcolor{
+            background-color:#d4e3e5;
+        }
+ .evenrowcolor{
+            background-color:#c3dde0;
+        }
+ .equipment{
+     width: 82px;
+     margin: 0px;
+     position: relative;
+     float: left;
+ }
+ .excel{
+     width: 80px;
+     height: 35px;
+     margin: 0px;
+     position: relative;
+     left: 84px;
+ }
+ .equipment select{
+     width: 80px;
+     height: 35px;
+     line-height: 35px;
+     background-color:#c3dde0;
+ }
+.excel_bu{
+     width: 80px;
+     height: 35px;
+     background-color: #c3dde0;
+     position: relative;
+     top: -35px;
+ }
