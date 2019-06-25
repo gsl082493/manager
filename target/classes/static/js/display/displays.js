@@ -122,7 +122,7 @@ function getData(){
         myChart.setOption({
             backgroundColor: '#FBFBFB',
             title: {
-                text: '数据表'
+                text: '数据表1'
             },
             tooltip: {
                 trigger: 'axis'
@@ -263,7 +263,7 @@ function getModel() {
     myChart.setOption({
         backgroundColor: '#FBFBFB',
         title: {
-            text: '数据表'
+            text: '数据表2'
         },
         tooltip: {
             trigger: 'axis'

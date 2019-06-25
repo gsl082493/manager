@@ -13,16 +13,16 @@ $(function () {
             title:"数据信息列表",
             cols:[[
                   {type:'numbers'}
-                , {field: 'key1', title: 'X', align: 'center',width:90}
-                , {field: 'key2', title: 'Y', align: 'center',width:90}
-                , {field: 'key3', title: 'Z', align: 'center',width:90}
-                , {field: 'key4', title: '压力', align: 'center',width:90}
-                , {field: 'key5', title: '力值', align: 'center',width:90}
-                , {field: 'key6', title: '长度', align: 'center',width:90}
-                , {field: 'key7', title: '摄氏度', align: 'center',width:90}
-                , {field: 'key8', title: '速度', align: 'center',width:90}
-                , {field: 'key9', title: '数据9', align: 'center',width:90}
-                , {field: 'key0', title: '数据10', align: 'center',width:90}
+                , {field: 'key1', title: 'X', sort: true, align: 'center',width:90}
+                , {field: 'key2', title: 'Y', sort: true, align: 'center',width:90}
+                , {field: 'key3', title: 'Z', sort: true, align: 'center',width:90}
+                , {field: 'key4', title: '压力', sort: true, align: 'center',width:90}
+                , {field: 'key5', title: '力值', sort: true, align: 'center',width:90}
+                , {field: 'key6', title: '长度', sort: true, align: 'center',width:90}
+                , {field: 'key7', title: '摄氏度', sort: true, align: 'center',width:90}
+                , {field: 'key8', title: '速度', sort: true, align: 'center',width:90}
+                , {field: 'key9', title: '数据9', sort: true, align: 'center',width:90}
+                , {field: 'key0', title: '数据10', sort: true, align: 'center',width:90}
                 , {fixed: 'right', title: '操作', align: 'center', toolbar: '#optBar'}
             ]],
             done:function (res,curr,count) {
@@ -42,7 +42,7 @@ $(function () {
                         }
                     }
                 });
-            },1000);
+            },3000);
             }
         });
         //监听工具条

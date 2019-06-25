@@ -90,7 +90,6 @@ public class ShiroConfig {
         /*测试POST、GET上传数据*/
         filterMap.put("/user/getUsers","anon");
         filterMap.put("/data/setDatas","anon");
-        filterMap.put("/data/getDatas","anon");
         filterMap.put("/user/login", "anon");
 
         // <!-- authc:所有url都必须认证通过才可以访问; anon:所有url都都可以匿名访问【放行】-->
