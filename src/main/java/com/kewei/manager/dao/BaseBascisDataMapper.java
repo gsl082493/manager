@@ -4,7 +4,6 @@ import com.kewei.manager.pojo.BaseBascisData;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 import tk.mapper.MyMapper;
-
 import java.util.List;
 import java.util.Map;
 
@@ -23,10 +22,25 @@ public interface BaseBascisDataMapper extends MyMapper<BaseBascisData> {
      */
     List<Map<String, Object>> findBaseData(Map<String, Object> pagemap);
 
+    /**
+     * 修改信息
+     * @param baseBascisData
+     * @return
+     */
     int updateBascisData(BaseBascisData baseBascisData);
 
+    /**
+     * 删除信息
+     * @param id
+     * @return
+     */
     int deleteBascisData(@Param("id") Integer id);
 
+    /**
+     * 添加信息
+     * @param baseBascisData
+     * @return
+     */
     int insertBascisDatas(BaseBascisData baseBascisData);
     /**
      * 获取折线图数据
@@ -34,6 +48,10 @@ public interface BaseBascisDataMapper extends MyMapper<BaseBascisData> {
      */
     List<BaseBascisData> getExcel();
 
+    /**
+     * 获取时间
+     * @return
+     */
     List<BaseBascisData> getTime();
 
     /**

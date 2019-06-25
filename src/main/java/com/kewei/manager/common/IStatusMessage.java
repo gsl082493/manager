@@ -3,9 +3,8 @@ package com.kewei.manager.common;
 /**
  * @Title: IStatusMessage
  * @Description: 响应状态信息
- * @author: youqing
- * @version: 1.0
- * @date: 2018/11/23 9:50
+ * @auther: Administrator
+ * @date: 2019/6/11 9:22
  */
 public interface IStatusMessage {
 

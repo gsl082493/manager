@@ -29,9 +29,8 @@ import java.util.Deque;
 /**
  * @Title: KickouSessionFilter
  * @Description: 进行用户访问控制
- * @author: youqing
- * @version: 1.0
- * @date: 2018/11/23 9:37
+ * @auther: Administrator
+ * @date: 2019/6/17 9:22
  */
 public class KickoutSessionFilter extends AccessControlFilter {
 

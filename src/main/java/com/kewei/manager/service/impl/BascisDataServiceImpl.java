@@ -15,8 +15,8 @@ import java.util.Map;
 /**
  * 数据实现类
  *
- * @author Administrator
- * @date 2019/5/29 0029
+ * @auther: Administrator
+ * @date: 2019/5/17 9:22
  **/
 @Service
 public class BascisDataServiceImpl implements BascisDataService {

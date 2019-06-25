@@ -30,6 +30,14 @@ public class EquipmentController {
     public String toPage() {
         return "/display/shebei";
     }
+
+	/**
+	 * 查找设备所有数据-分页
+	 * @param page
+	 * @param limit
+	 * @param pagemap
+	 * @return
+	 */
     @RequestMapping("/findEquipment")
     @ResponseBody
     public Map<String,Object> findEquipment(int page,int limit,Map<String,Object> pagemap) {
@@ -45,6 +53,19 @@ public class EquipmentController {
 		map.put("data",cnlist);
 		return map;
     }
+
+	/**
+	 * 添加数据
+	 * @param name
+	 * @param model_Number
+	 * @param factory_Number
+	 * @param standard_Number
+	 * @param eq_time
+	 * @param canshu
+	 * @param custom_Number
+	 * @param xinximap
+	 * @return
+	 */
     @RequestMapping("/addequip")
     @ResponseBody
     public int addequip(String name,String model_Number,String factory_Number,String standard_Number,String eq_time,String canshu,String custom_Number,Map<String,Object> xinximap){
@@ -77,6 +98,11 @@ public class EquipmentController {
   		return 1;
   	}
 
+	/**
+	 * 查找设备名
+	 * @param modelName
+	 * @return
+	 */
   	@PostMapping("findName")
 	@ResponseBody
   	public Map<String , Object> findName(Map<String , Object> modelName){
@@ -85,6 +111,13 @@ public class EquipmentController {
     	map.put("nameList",nameList);
     	return map;
 	}
+
+	/**
+	 * 查找设备型号
+	 * @param modelNumber
+	 * @param name
+	 * @return
+	 */
 	@PostMapping("findModelNumber")
 	@ResponseBody
 	public Map<String , Object> findModelNumber(Map<String , Object> modelNumber , String name){
@@ -94,6 +127,14 @@ public class EquipmentController {
 		map.put("name",name);
 		return map;
 	}
+
+	/**
+	 * 查找设备型号级设备名
+	 * @param modelNameAndNumber
+	 * @param name
+	 * @param model_Number
+	 * @return
+	 */
 	@PostMapping("selectModelNameAndNumber")
 	@ResponseBody
 	public Map<String , Object> selectModelNameAndNumber(Map<String , Object> modelNameAndNumber , String name , String model_Number){

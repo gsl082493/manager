@@ -2,9 +2,8 @@ package com.kewei.manager.dto;
 /**
  * @Title: UserDTO
  * @Description:
- * @author: youqing
- * @version: 1.0
- * @date: 2018/11/21 11:19
+ * @auther: Administrator
+ * @date: 2019/6/17 9:22
  */
 public class LoginDTO {
     private String username;

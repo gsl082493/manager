@@ -10,9 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 /**
  * @Title: LoginController
  * @Description:
- * @author: youqing
- * @version: 1.0
- * @date: 2018/11/20 11:39
+ * @auther: Administrator
+ * @date: 2019/6/11 9:22
  */
 @Controller
 public class IndexController {

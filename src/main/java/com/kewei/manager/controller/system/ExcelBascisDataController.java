@@ -41,6 +41,10 @@ public class ExcelBascisDataController {
         return map;
     }
 
+    /**
+     * 获取时间
+     * @return
+     */
     @GetMapping("/getTime")
     @ResponseBody
     public Map<String , Object> getTimeBases(){

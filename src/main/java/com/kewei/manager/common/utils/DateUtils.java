@@ -9,9 +9,8 @@ import java.util.Date;
 /**
  * @Title: DateUtils
  * @Description:
- * @author: youqing
- * @version: 1.0
- * @date: 2018/5/26 9:58
+ * @auther: Administrator
+ * @date: 2019/6/11 9:22
  */
 public class DateUtils {
 
@@ -21,8 +20,8 @@ public class DateUtils {
      *
      * @param: 获取当前系统时间 yyyy-MM-dd HH:mm:ss
      * @return:
-     * @auther: youqing
-     * @date: 2018/5/26 9:59
+     * @auther: Administrator
+     * @date: 2019/6/11 9:22
      */
     public static String getCurrentDate(){
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
@@ -36,9 +35,9 @@ public class DateUtils {
      * 功能描述: 
      *
      * @param: date类 获取当前系统时间 yyyy-MM-dd HH:mm:ss
-     * @return: 
-     * @auther: youqing
-     * @date: 2018/5/26 10:39
+     * @return:
+     * @auther: Administrator
+     * @date: 2019/6/11 9:22
      */
     public static Date getCurrentDateToDate () {
         DateFormat df = new SimpleDateFormat( "yyyy-MM-dd HH:mm:ss" );

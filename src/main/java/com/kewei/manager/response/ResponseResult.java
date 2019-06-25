@@ -7,9 +7,8 @@ import java.io.Serializable;
 /**
  * @Title: ResponseResult
  * @Description: 前端请求响应结果,code:编码,message:描述,obj对象，可以是单个数据对象，数据列表或者PageInfo
- * @author: youqing
- * @version: 1.0
- * @date: 2018/11/23 9:48
+ * @auther: Administrator
+ * @date: 2019/5/17 9:22
  */
 public class ResponseResult implements Serializable{
 

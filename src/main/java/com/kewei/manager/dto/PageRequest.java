@@ -4,9 +4,8 @@ package com.kewei.manager.dto;
 /**
  * @Title:
  * @Description:
- * @author: chris
- * @version:
- * @date: 2018/10/23 11:46
+ * @auther: Administrator
+ * @date: 2019/6/17 9:22
  */
 public class PageRequest {
     /** 默认页面大小 */

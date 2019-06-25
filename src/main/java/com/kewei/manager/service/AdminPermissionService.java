@@ -11,9 +11,8 @@ import java.util.Map;
 /**
  * @Title: PermissionService
  * @Description:
- * @author: youqing
- * @version: 1.0
- * @date: 2018/11/30 9:44
+ * @auther: Administrator
+ * @date: 2019/5/17 9:22
  */
 public interface AdminPermissionService {
 
@@ -23,8 +22,8 @@ public interface AdminPermissionService {
      *
      * @param:
      * @return:
-     * @auther: youqing
-     * @date: 2018/11/30 9:48
+     * @auther: Administrator
+     * @date: 2019/5/17 9:22
      */
     Map<String,Object> addPermission(BaseAdminPermission permission);
 
@@ -34,8 +33,8 @@ public interface AdminPermissionService {
      *
      * @param:
      * @return:
-     * @auther: youqing
-     * @date: 2018/11/30 9:48
+     * @auther: Administrator
+     * @date: 2019/5/17 9:22
      */
     Map<String,Object> updatePermission(BaseAdminPermission permission);
 
@@ -45,8 +44,8 @@ public interface AdminPermissionService {
      *
      * @param:
      * @return:
-     * @auther: youqing
-     * @date: 2018/11/30 11:35
+     * @auther: Administrator
+     * @date: 2019/5/17 9:22
      */
     PageDataResult getPermissionList(Integer pageNum, Integer pageSize);
 
@@ -56,8 +55,8 @@ public interface AdminPermissionService {
      *
      * @param:
      * @return:
-     * @auther: youqing
-     * @date: 2018/11/30 11:36
+     * @auther: Administrator
+     * @date: 2019/5/17 9:22
      */
     List<PermissionDTO> parentPermissionList();
 
@@ -67,8 +66,8 @@ public interface AdminPermissionService {
      *
      * @param:
      * @return:
-     * @auther: youqing
-     * @date: 2018/11/30 12:04
+     * @auther: Administrator
+     * @date: 2019/5/17 9:22
      */
     Map<String, Object> del(long id);
 
@@ -78,8 +77,8 @@ public interface AdminPermissionService {
      *
      * @param:
      * @return:
-     * @auther: youqing
-     * @date: 2018/12/4 13:51
+     * @auther: Administrator
+     * @date: 2019/5/17 9:22
      */
     BaseAdminPermission getById(Object id);
 
@@ -90,8 +89,8 @@ public interface AdminPermissionService {
      *
      * @param:
      * @return:
-     * @auther: youqing
-     * @date: 2018/12/4 13:51
+     * @auther: Administrator
+     * @date: 2019/5/17 9:22
      */
     Map<String, Object> getUserPerms(BaseAdminUser user);
 

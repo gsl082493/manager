@@ -19,9 +19,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 /**
  * @Title: MyRealm
  * @Description:
- * @author: youqing
- * @version: 1.0
- * @date: 2018/11/22 15:53
+ * @auther: Administrator
+ * @date: 2019/5/17 9:22
  */
 public class MyRealm extends AuthorizingRealm {
 
@@ -46,8 +45,8 @@ public class MyRealm extends AuthorizingRealm {
      *
      * @param:
      * @return:
-     * @auther: youqing
-     * @date: 2018/9/11 10:30
+     * @auther: Administrator
+     * @date: 2019/5/17 9:22
      */
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection arg0) {
@@ -91,8 +90,8 @@ public class MyRealm extends AuthorizingRealm {
      *
      * @param:
      * @return:
-     * @auther: youqing
-     * @date: 2018/9/11 10:32
+     * @auther: Administrator
+     * @date: 2019/5/17 9:22
      */
     @Override
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken authenticationToken) throws AuthenticationException {

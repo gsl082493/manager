@@ -29,9 +29,8 @@ import java.util.Map;
 /**
  * @Title: ShiroConfig
  * @Description: shiro配置
- * @author: youqing
- * @version: 1.0
- * @date: 2018/9/11 10:33
+ * @auther: Administrator
+ * @date: 2019/6/11 9:22
  */
 @Configuration
 public class ShiroConfig {
@@ -185,8 +184,8 @@ public class ShiroConfig {
      *
      * @param:
      * @return:
-     * @auther: youqing
-     * @date: 2018/11/23 10:22
+     * @auther: Administrator
+     * @date: 2019/6/11 9:22
      */
     public KickoutSessionFilter kickoutSessionFilter(){
         KickoutSessionFilter kickoutSessionFilter = new KickoutSessionFilter();

@@ -9,22 +9,48 @@ import java.util.Map;
 /**
  * @Title: AdminRoleService
  * @Description:
- * @author: youqing
- * @version: 1.0
- * @date: 2018/11/21 14:25
+ * @auther: Administrator
+ * @date: 2019/5/17 9:22
  */
 public interface AdminRoleService {
-
+    /**
+     * 分页查询
+     * @param pageNum
+     * @param pageSize
+     * @return
+     */
     PageDataResult getRoleList(Integer pageNum, Integer pageSize);
 
     List<BaseAdminRole> getRoles();
 
+    /**
+     * 查找ID
+     * @param id
+     * @return
+     */
     BaseAdminRole findRoleById(Integer id);
 
+    /**
+     * 修改
+     * @param role
+     * @return
+     */
     Map<String,Object> updateRole(BaseAdminRole role);
 
+    /**
+     * 删除
+     * @param id
+     * @param status
+     * @return
+     */
     Map<String,Object> delRole(Integer id,Integer status);
 
+    /**
+     * 恢复
+     * @param id
+     * @param status
+     * @return
+     */
     Map<String,Object> recoverRole(Integer id,Integer status);
 
     Map<String,Object> insertRole(BaseAdminRole role);

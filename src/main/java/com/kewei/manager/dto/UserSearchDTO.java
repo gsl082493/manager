@@ -6,9 +6,8 @@ import lombok.Data;
 /**
  * @Title: UserSearchDTO
  * @Description:
- * @author: youqing
- * @version: 1.0
- * @date: 2018/11/21 11:19
+ * @auther: Administrator
+ * @date: 2019/6/17 9:22
  */
 @Data
 public class UserSearchDTO {

@@ -7,6 +7,9 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 import org.springframework.web.WebApplicationInitializer;
 import tk.mybatis.spring.annotation.MapperScan;
 
+/**
+ * 启动类
+ */
 @SpringBootApplication
 @MapperScan(basePackages = "com.kewei.manager.dao")
 public class ManagerApplication extends SpringBootServletInitializer implements WebApplicationInitializer {

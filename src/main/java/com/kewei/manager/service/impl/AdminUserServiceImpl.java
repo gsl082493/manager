@@ -22,9 +22,8 @@ import java.util.Map;
 /**
  * @Title: AdminUserServiceImpl
  * @Description:
- * @author: youqing
- * @version: 1.0
- * @date: 2018/11/21 11:04
+ * @auther: Administrator
+ * @date: 2019/5/17 9:22
  */
 @Service
 public class AdminUserServiceImpl implements AdminUserService {

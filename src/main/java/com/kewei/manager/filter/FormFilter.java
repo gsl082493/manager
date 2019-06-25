@@ -11,9 +11,8 @@ import javax.servlet.ServletResponse;
 /**
  * @Title: FormFilter
  * @Description:
- * @author: youqing
- * @version: 1.0
- * @date: 2018/9/11 10:55
+ * @auther: Administrator
+ * @date: 2019/6/17 9:22
  */
 public class FormFilter extends FormAuthenticationFilter {
 

@@ -18,9 +18,24 @@ public interface BascisDataService {
      */
     List<Map<String, Object>> findBaseData(Map<String, Object> pagemap);
 
+    /**
+     * 修改数据
+     * @param baseBascisData
+     * @return
+     */
     Map<String,Object> updateBascisData(BaseBascisData baseBascisData);
 
+    /**
+     * 删除数据
+     * @param id
+     * @return
+     */
     Map<String, Object> delBascisData(Integer id);
 
+    /**
+     * 添加数据
+     * @param baseBascisData
+     * @return
+     */
     Map<String,Object> insertBascisData(BaseBascisData baseBascisData);
 }

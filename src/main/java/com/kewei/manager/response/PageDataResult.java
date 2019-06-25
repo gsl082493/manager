@@ -5,9 +5,8 @@ import java.util.List;
 /**
  * @Title: PageDataResult
  * @Description: 封装DTO分页数据（记录数和所有记录）
- * @author: youqing
- * @version: 1.0
- * @date: 2018/11/21 11:15
+ * @auther: Administrator
+ * @date: 2019/5/17 9:22
  */
 public class PageDataResult {
 

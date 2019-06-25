@@ -28,7 +28,17 @@ public interface BaseAdminPermissionMapper extends MyMapper<BaseAdminPermission>
 
     List<PermissionDTO> parentPermissionList();
 
+    /**
+     * 修改数据
+     * @param permission
+     * @return
+     */
     int updatePermission(BaseAdminPermission permission);
 
+    /**
+     * 通过Id查询
+     * @param pid
+     * @return
+     */
     List<PermissionDTO> getPermissionListByPId(@Param("pid") Integer pid);
 }

@@ -17,11 +17,9 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @Title: PermissionController
- * @Description: 权限管理
- * @author: youqing
- * @version: 1.0
- * @date: 2018/11/29 18:16
+ * 菜单控制层
+ * @auther: Administrator
+ * @date: 2019/6/11 9:22
  */
 @Controller
 @RequestMapping("permission")
@@ -38,8 +36,8 @@ public class PermissionController {
      *
      * @param:
      * @return:
-     * @auther: youqing
-     * @date: 2018/11/30 9:22
+     * @auther: Administrator
+     * @date: 2019/6/11 9:22
      */
     @RequestMapping("permissionManage")
     public String permissionManage() {
@@ -54,8 +52,8 @@ public class PermissionController {
      *
      * @param:
      * @return:
-     * @auther: youqing
-     * @date: 2018/11/30 10:30
+     * @auther: Administrator
+     * @date: 2019/6/11 9:22
      */
     @PostMapping("permissionList")
     @ResponseBody
@@ -88,8 +86,8 @@ public class PermissionController {
      *
      * @param:
      * @return:
-     * @auther: youqing
-     * @date: 2018/11/30 11:35
+     * @auther: Administrator
+     * @date: 2019/6/11 9:22
      */
     @GetMapping("parentPermissionList")
     @ResponseBody
@@ -107,8 +105,8 @@ public class PermissionController {
      *
      * @param:
      * @return:
-     * @auther: youqing
-     * @date: 2018/11/30 9:42
+     * @auther: Administrator
+     * @date: 2019/6/11 9:22
      */
     @PostMapping("setPermission")
     @ResponseBody
@@ -131,8 +129,8 @@ public class PermissionController {
      *
      * @param:
      * @return:
-     * @auther: youqing
-     * @date: 2018/11/30 12:02
+     * @auther: Administrator
+     * @date: 2019/6/11 9:22
      */
     @PostMapping("del")
     @ResponseBody
@@ -152,8 +150,8 @@ public class PermissionController {
      *
      * @param:
      * @return:
-     * @auther: youqing
-     * @date: 2018/12/4 9:48
+     * @auther: Administrator
+     * @date: 2019/6/11 9:22
      */
     @GetMapping("getUserPerms")
     @ResponseBody

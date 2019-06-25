@@ -26,9 +26,8 @@ import java.util.Map;
 /**
  * @Title: UserController
  * @Description: 系统用户管理
- * @author: youqing
- * @version: 1.0
- * @date: 2018/11/20 15:17
+ * @auther: Administrator
+ * @date: 2019/6/11 9:22
  */
 @Controller
 @RequestMapping("user")
@@ -46,8 +45,8 @@ public class UserController {
      *
      * @param:
      * @return:
-     * @auther: youqing
-     * @date: 2018/11/22 15:47
+     * @auther: Administrator
+     * @date: 2019/6/11 9:22
      */
     @RequestMapping("login")
     @ResponseBody
@@ -107,8 +106,8 @@ public class UserController {
      *
      * @param:
      * @return:
-     * @auther: youqing
-     * @date: 2018/11/22 17:26
+     * @auther: Administrator
+     * @date: 2019/6/11 9:22
      */
     @RequestMapping("setPwd")
     @ResponseBody
@@ -142,8 +141,8 @@ public class UserController {
      *
      * @param:
      * @return:
-     * @auther: youqing
-     * @date: 2018/11/21 13:50
+     * @auther: Administrator
+     * @date: 2019/6/11 9:22
      */
     @RequestMapping("/userManage")
     public String userManage() {
@@ -156,8 +155,8 @@ public class UserController {
      *
      * @param:
      * @return:
-     * @auther: youqing
-     * @date: 2018/11/21 11:10
+     * @auther: Administrator
+     * @date: 2019/6/11 9:22
      */
     @RequestMapping(value = "/getUserList", method = RequestMethod.POST)
     @ResponseBody
@@ -198,8 +197,8 @@ public class UserController {
      *
      * @param:
      * @return:
-     * @auther: youqing
-     * @date: 2018/11/22 10:14
+     * @auther: Administrator
+     * @date: 2019/6/11 9:22
      */
     @RequestMapping(value = "/setUser", method = RequestMethod.POST)
     @ResponseBody
@@ -221,8 +220,8 @@ public class UserController {
      *
      * @param:
      * @return:
-     * @auther: youqing
-     * @date: 2018/11/22 11:59
+     * @auther: Administrator
+     * @date: 2019/6/11 9:22
      */
     @RequestMapping(value = "/updateUserStatus", method = RequestMethod.POST)
     @ResponseBody
